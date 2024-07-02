@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title class="text-sm">Kotak Pintar</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body class="overflow-x-hidden bg-[#05151F] text-white">
+    <header class="absolute top-0 w-full items-center">
+        <div class="container mx-auto min-w-[75%]">
+            <div class="relative mx-auto flex items-center justify-between">
+                <div class="z-50 flex items-center gap-3 md:gap-5">
+                    <img src="img/pintar_logo.svg" alt="" class="w-[13%]">
+                    <a href="" class="block py-6 text-base font-black lg:text-xl">Kotak Pintar</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="hamburger" type="button" class="absolute right-6 z-50 block md:hidden">
+                        <img src="img/hamburger.svg" alt="" class="" />
+                    </button>
+                    <nav id="nav-menu"
+                        class="absolute right-4 top-full z-50 hidden w-52 rounded-lg bg-white py-4 shadow-lg md:static md:block md:w-full md:rounded-none md:bg-opacity-0 md:text-xs md:shadow-none xl:md:text-sm">
+                        <ul class="block md:flex md:font-semibold">
+                            <li class="group">
+                                <a href="#home" class="nav-class">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#price" class="nav-class">Fitur</a>
+                            </li>
+                            <li class="group">
+                                <a href="#faq" class="nav-class">File</a>
+                            </li>
+                            <li class="group">
+                                <a href="#testimoni" class="nav-class">Review</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hidden gap-4 font-bold xl:flex">
+                    <a href="https://wa.me/6281246336063?text=Hai%20saya%20ingin%20membersihkan%20rumah%20saya"
+                        class="w-full rounded-md border-[1.5px] border-white border-opacity-20 px-5 py-3 text-sm font-semibold text-white">Daftar
+                        Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="bg relative flex items-center">
+        <div class="container mx-auto mb-8 mt-24 sm:mb-0 md:mt-32 xl:mt-32">
+            <div class="relative flex w-full items-center justify-between">
+                <div class="flex w-[85%] flex-col justify-between gap-3 sm:w-[50%] xl:w-3/5 lg:gap-5 xl:gap-6"
+                    data-aos="fade-left" data-aos-delay="300">
+                    <div class="">
+                        <h1
+                            class="mb-3 text-[8px] font-medium sm:text-[10px] lg:text-sm lg:mb-5 xl:mb-6 2xl:text-xl border w-fit border-white border-opacity-20 rounded-lg p-2 px-3 lg:p-3 lg:px-5">
+                            File Manager Terbaik
+                        </h1>
+                        <h1
+                            class="text-lg font-bold sm:tracking-wide sm:text-xl md:text-2xl lg:leading-[2.75rem] lg:text-4xl xl:tracking-wider xl:text-5xl xl:leading-[3.5rem] xl:text-balance 2xl:text-[2.5rem] 2xl:leading-[3.25rem]">
+                            Kelola File Anda dengan Mudah dan Cepat
+                        </h1>
+                    </div>
+                    <p
+                        class="line-clamp-4 w-[90%] text-[9px] font-normal opacity-80 md:text-[10px] lg:text-xs xl:text-base xl:w-3/4 2xl:text-lg">
+                        Atur, simpan, dan akses file Anda dari mana saja dengan keamanan terbaik. Nikmati kemudahan
+                        sinkronisasi dan kolaborasi tanpa batas.
+                    </p>
+                    <div class="flex mt-1 xl:mt-2 gap-2 md:gap-3 lg:gap-4">
+                        <a href="#"
+                            class="scale flex items-center justify-center bg-secondary rounded border-[1.5px] border-secondary p-2 text-[8px] font-semibold text-primary md:text-[10px] lg:px-3 lg:text-xs xl:text-sm">Mulai
+                            Sekarang</a>
+                        <a href="#"
+                            class="scale flex items-center justify-center rounded border-[1.5px] border-primary bg-primary p-2 text-[8px] font-semibold text-white md:text-[10px] lg:px-3 lg:text-xs xl:text-sm text-opacity-70">Lihat
+                            Selengkapnya</a>
+                    </div>
+
+                </div>
+
+                <div class="hidden absolute right-0 sm:w-[45%] sm:flex flex-col gap-4 items-end xl:w-1/2"
+                    data-aos="fade-right">
+                    <div class="flex flex-col gap-2 lg:gap-3 w-[65%]">
+                        <div class="bg-primary rounded-md p-2 flex justify-between items-center lg:px-3 lg:rounded-lg">
+                            <div class="flex gap-2 py-1 lg:py-2 lg:gap-3 w-2/5">
+                                <img src="img/pintar_foto.svg" alt="" class="w-[12%] xl:w-[14%]">
+                                <p class="text-[8px] opacity-70 lg:text-[10px] xl:text-xs">kueulangtahun.jpg</p>
+                            </div>
+                            <p class="text-[8px] opacity-70 lg:text-[10px] xl:text-xs mr-2">Gambar</p>
+                        </div>
+                        <div class="bg-primary rounded-md p-2 flex justify-between items-center lg:px-3 lg:rounded-lg">
+                            <div class="flex gap-2 py-1 lg:py-2 lg:gap-3 w-2/5">
+                                <img src="img/pintar_video.svg" alt="" class="w-[12%] xl:w-[14%]">
+                                <p class="text-[8px] opacity-70 lg:text-[10px] xl:text-xs">tahunbaru.mp4</p>
+                            </div>
+                            <p class="text-[8px] opacity-70 lg:text-[10px] xl:text-xs mr-2">Video</p>
+                        </div>
+                        <div class="bg-primary rounded-md p-2 flex justify-between items-center lg:px-3 lg:rounded-lg">
+                            <div class="flex gap-2 py-1 lg:py-2 lg:gap-3 w-2/5">
+                                <img src="img/pintar_apk.svg" alt="" class="w-[12%] xl:w-[14%]">
+                                <p class="text-[8px] opacity-70 lg:text-[10px] xl:text-xs">Whatsapp</p>
+                            </div>
+                            <p class="text-[8px] opacity-70 lg:text-[10px] xl:text-xs mr-2">Whatsapp</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 lg:gap-4 w-full justify-end lg:justify-between items-start">
+                        <div
+                            class="border-[3px] bg-secondary bg-opacity-[0.12] w-[65%] rounded-xl border-secondary border-dashed py-4 xl:py-6">
+                            <div class="flex flex-col gap-2 md:gap-4 items-center ">
+                                <img src="img/pintar_cloud.svg" alt="" class="w-[10%]">
+                                <h1
+                                    class="text-white text-center font-medium text-[6px] md:text-[8px] xl:text-sm w-[90%]">
+                                    Seret Dan Lepas Atau <span class="text-secondary">Telusuri</span> Untuk Mengunggah
+                                </h1>
+                            </div>
+                        </div>
+                        <div id="donut2" class="hidden lg:block bg-primary py-4 rounded-xl w-[35%]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden mt-12 md:flex justify-between items-center xl:mt-20">
+                <div
+                    class="rounded-md hidden divide-x-2 divide-white divide-opacity-10 border-2 w-fit p-2 border-white border-opacity-20 md:flex xl:p-3">
+                    <h1 class="px-2 text-xl font-semibold lg:text-2xl xl:px-3 xl:text-3xl">
+                        9.0
+                    </h1>
+                    <div class="flex w-fit flex-col gap-1 pl-2 xl:pl-3">
+                        <img src="img/pintar_landing-star.svg" alt="" class="w-1/2 md:w-3/5 lg:w-3/4 xl:w-4/5" />
+                        <h1 class="text-[10px] font-semibold lg:text-xs xl:text-sm">
+                            40K Rating Positif
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex sm:gap-4 md:gap-8 lg:gap-12 xl:gap-20">
+                    <div class="flex flex-col gap-1 md:gap-2">
+                        <p class="text-sm font-bold text-white lg:text-xl xl:text-2xl">
+                            05<span class="text-secondary">+</span>
+                        </p>
+                        <p class="font-normal opacity-65 sm:text-[10px] lg:text-sm">
+                            Tahun
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-1 md:gap-2">
+                        <p class="text-sm font-bold text-white lg:text-xl xl:text-2xl">
+                            130K<span class="text-secondary">+</span>
+                        </p>
+                        <p class="font-normal opacity-65 sm:text-[10px] lg:text-sm">
+                            Pengguna
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-1 md:gap-2">
+                        <p class="text-sm font-bold text-white lg:text-xl xl:text-2xl">
+                            02<span class="text-secondary">+</span>
+                        </p>
+                        <p class="font-normal opacity-65 sm:text-[10px] lg:text-sm">
+                            Fitur Eksklusif
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="service" class="py-8 md:py-14 xl:py-16 sm:mt-8 xl:mt-12">
+        <div class="container  mx-auto">
+            <div class="text-center sm:text-left sm:flex sm:justify-between items-end" data-aos="fade-up">
+                <h1
+                    class="mb-3 text-xs sm:mb-0 text-balance font-bold md:text-sm lg:text-lg xl:text-xl xl:w-1/3 2xl:text-2xl">
+                    Fitur dan Layanan Terbaik untuk Produktivitas Maksimal
+                </h1>
+                <h1 class="text-[8px] sm:text-right text-balance font-normal opacity-65 md:text-[10px] lg:text-xs xl:text-sm xl:w-1/2
+                ">
+                    menawarkan berbagai fitur dan layanan unggulan yang dirancang khusus untuk meningkatkan pengelolaan
+                    file Anda.
+                </h1>
+            </div>
+            <div class="mt-6 flex flex-wrap justify-around gap-y-4 sm:justify-between lg:mt-10" data-aos="fade-up">
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20">
+                                <img src="img/pintar_landing-service1.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service2.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service3.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service4.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service5.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service6.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service7.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+                <div
+                    class="group flex w-[45%] flex-col justify-between gap-4 rounded-md bg-secondary p-4 shadow-md bg-opacity-10 transition-all duration-300 hover:bg-secondary sm:w-[47%] sm:p-6 md:w-[24%] md:p-3 lg:p-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex w-full items-center gap-2 sm:gap-3 lg:gap-4">
+                            <div
+                                class="relative w-[22%] sm:w-[20%] bg-secondary bg-opacity-[0.12] group-hover:bg-[#05151F] group-hover:bg-opacity-20 p-2 sm:p-3 md:p-2 lg:p-3 xl:p-4 rounded-md border border-white border-opacity-20 transition-all duration-300">
+                                <img src="img/pintar_landing-service8.svg" alt=""
+                                    class="w-full transition-all duration-300  group-hover:invert" />
+                            </div>
+                            <h1
+                                class="w-[50%] text-[8px] font-bold duration-300 group-hover:text-[#05151F] sm:text-sm md:text-[9px] md:leading-4 lg:text-xs xl:text-base 2xl:text-lg">
+                                Manajemen File Terpusat
+                            </h1>
+                        </div>
+                        <p
+                            class="line-clamp-3 text-[8px] font-normal opacity-65 duration-300 group-hover:text-[#05151F] group-hover:font-medium group-hover:opacity-100 sm:w-4/5 sm:text-[10px] md:w-full md:text-[8px] lg:w-4/5 lg:text-[10px] xl:w-full xl:text-sm xl:leading-5 2xl:text-base">
+                            Kelola semua file Anda di satu tempat dengan antarmuka yang intuitif dan mudah digunakan.
+                        </p>
+                    </div>
+                    <button
+                        class="scale mt-1 w-1/2 whitespace-nowrap text-left text-[8px] font-medium text-secondary group-hover:text-[#05151F] sm:text-[10px] md:text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm">
+                        Lihat Selengkapnya
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-8 md:py-14 xl:py-16">
+        <div class="container mx-auto">
+            <div class="relative flex w-full items-center justify-between">
+                <div class="hidden sm:w-[50%] sm:flex flex-col gap-4 items-end" data-aos="fade-right">
+                    <img src="img/pintar_landing-profil.svg" alt="" class="">
+                    <div class="flex flex-col w-full bg-primary p-4 xl:p-6 rounded-lg">
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-white pl-3 font-semibold text-[10px]">Aktivitas File</h1>
+                            <div class="flex gap-6">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    <p class="font-normal opacity-70 text-[8px] md:text-sm tracking-wide">Unggah File
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-[#2F6CE3] rounded-full"></div>
+                                    <p class="font-normal opacity-70 text-[8px] md:text-sm tracking-wide">Berbagi File
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="sm:mt-2 min-w-full xl:mx-auto xl:justify-center h-40 md:h-52 xl:h-80">
+                                <div id="withdrawn2" class="max-w-full  xl:mx-auto xl:justify-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-[85%] flex-col justify-between gap-3 sm:w-[45%] lg:gap-5 xl:gap-6"
+                    data-aos="fade-left" data-aos-delay="300">
+                    <div class="">
+                        <h1
+                            class="mb-3 text-[8px] font-medium sm:text-[10px] lg:text-sm lg:mb-5 xl:mb-6 xl:text-base 2xl:text-xl border w-fit border-white border-opacity-20 rounded-lg p-2 px-3 lg:p-3 lg:px-5">
+                            File Manager Terbaik
+                        </h1>
+                        <h1
+                            class="text-sm font-bold sm:tracking-wide sm:text-xl md:text-2xl lg:leading-[2.75rem] lg:text-3xl xl:tracking-wider xl:text-4xl xl:leading-[3.5rem] xl:text-balance 2xl:text-[2.5rem] 2xl:leading-[3.25rem]">
+                            Menghadirkan Solusi Terbaik dalam Manajemen File
+                        </h1>
+                    </div>
+                    <p
+                        class="line-clamp-4 w-[90%] text-[9px] font-normal opacity-80 md:text-[10px] lg:text-xs xl:text-base xl:w-3/4 2xl:text-lg">
+                        kami berkomitmen untuk menyediakan platform yang memungkinkan pengguna untuk mengatur,
+                        menyimpan, dan berbagi file dengan cara yang aman dan efektif.
+                    </p>
+                    <div class="flex mt-1 xl:mt-2 gap-2 md:gap-3 lg:gap-4">
+                        <a href="#"
+                            class="scale flex items-center justify-center bg-secondary rounded border-[1.5px] border-secondary p-2 text-[8px] font-semibold text-primary md:text-[10px] lg:px-3 lg:text-xs xl:text-sm">Mulai
+                            Sekarang</a>
+                        <a href="#"
+                            class="scale flex items-center justify-center rounded border-[1.5px] border-primary bg-primary p-2 text-[8px] font-semibold text-white md:text-[10px] lg:px-3 lg:text-xs xl:text-sm text-opacity-70">Lihat
+                            Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="py-8 md:py-12 xl:py-14">
+        <div class="container  mx-auto">
+            <div class="text-center sm:text-left sm:flex sm:justify-between items-end" data-aos="fade-up">
+                <h1
+                    class="mb-3 text-xs sm:mb-0 text-balance font-bold md:text-sm lg:text-xl xl:text-2xl xl:w-1/3 2xl:text-2xl">
+                    Organisasi File yang Lebih Terstruktur
+                </h1>
+                <h1 class="text-[8px] sm:text-right text-balance font-normal opacity-65 md:text-[10px] lg:text-xs xl:text-sm xl:w-1/2
+                ">
+                    Temukan cara mudah dan efisien untuk mengelola berbagai jenis file Anda. Dengan mengorganisir file
+                    ke dalam kategori yang tepat
+                </h1>
+            </div>
+            <div class="mt-6 flex flex-wrap justify-around gap-y-4 sm:justify-between lg:mt-10" data-aos="fade-up">
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-doc.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                            Dokumen</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            PDF, Word, Excel</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-gambar.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                            Gambar</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            JPG, PNG, GIF, SVG</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-video.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">Video
+                        </h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            MP4, AVI, MOV, MKV</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-audio.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">Audio
+                        </h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            MP3, WAV, AAC, FLAC</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-arsip.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">Arsip
+                        </h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            ZIP, RAR, 7z, TAR</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-kode.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">Kode
+                            Sumber</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            HTML, CSS, JS, PY</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-apk.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                            Aplikasi</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            EXE, DMG, APK, ISO</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-ebook.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">Ebook
+                        </h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            EPUB, MOBI, PDF</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-spreadsheet.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                            Spreadsheet</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            XLS, XLSX, ODS</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-desain.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                            Desain & Grafik</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            PSD, AI, INDD, Figma</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-analis.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">Data
+                            Analisis</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            CSV, JSON, XML</p>
+                    </div>
+                </div>
+                <div
+                    class="group flex w-[45%] items-center gap-3 xl:gap-4 rounded-md bg-secondary p-3 shadow-md bg-opacity-10 sm:w-[47%] md:w-[24%] sm:p-4 md:p-3 lg:p-5">
+                    <img src="img/pintar_landing-3d.svg" alt="" class="w-1/4">
+                    <div class="flex flex-col justify-between gap-1 md:gap-2">
+                        <h1 class="font-bold text-xs sm:text-base  md:text-xs lg:text-sm xl:text-base 2xl:text-lg">3D &
+                            CAD</h1>
+                        <p class="text-white opacity-65 text-[8px] sm:text-[10px] md:text-[9px] lg:text-xs xl:text-sm">
+                            STL, OBJ, DWG, DXF</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-8 md:py-14 xl:py-16">
+        <div class="container mx-auto">
+            <div class="text-center sm:hidden">
+                <h1
+                    class="mx-auto sm:mx-0 mb-3 text-[8px] font-medium sm:text-[10px] lg:text-sm lg:mb-5 xl:mb-6 2xl:text-xl border w-fit border-white border-opacity-20 rounded-lg p-2 px-3 lg:p-3 lg:px-5">
+                    File Manager Terbaik
+                </h1>
+                <h1
+                    class="text-xs text-balance font-bold sm:tracking-wide sm:text-xl md:text-2xl lg:leading-[2.75rem] lg:text-4xl xl:tracking-wider xl:text-5xl xl:leading-[3.5rem] xl:text-balance 2xl:text-[2.5rem] 2xl:leading-[3.25rem]">
+                    Kelola File Anda dengan Mudah dan Cepat
+                </h1>
+            </div>
+            <div class="items-end justify-between sm:flex">
+
+                <div class="relative -mt-1 flex flex-col sm:w-1/2 lg:w-[55%] lg:gap-2" data-aos="fade-down"
+                    data-aos-delay="200">
+                    <div class="hidden sm:block">
+                        <h1
+                            class="mx-auto sm:mx-0 mb-3 text-[8px] font-medium sm:text-[10px] lg:text-sm lg:mb-5 xl:mb-6 2xl:text-xl border w-fit border-white border-opacity-20 rounded-lg p-2 px-3 lg:p-3 lg:px-5">
+                            File Manager Terbaik
+                        </h1>
+                        <h1
+                            class="text-xs text-balance font-bold sm:tracking-wide sm:text-xl md:text-2xl  lg:text-4xl xl:tracking-wider xl:text-3xl xl:leading-[3rem] xl:text-balance 2xl:text-[2.5rem] 2xl:leading-[3.25rem]">
+                            Menghadirkan Solusi Terbaik dalam Manajemen File
+                        </h1>
+                    </div>
+                    <div class="mt-6 flex flex-col gap-y-4 xl:gap-y-6 2xl:gap-y-8" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <div
+                            class="group border-b-[1px] border-opacity-15 pb-3 text-white shadow-md transition-all duration-300 lg:pb-4">
+                            <div class="cursor-pointers flex items-center justify-between rounded-md">
+                                <h1
+                                    class="w-[100%] text-[10px] font-bold sm:text-[8px] md:text-[10px] lg:text-xs xl:text-base 2xl:text-base">
+                                    Platform apa saja yang didukung oleh aplikasi ini ?
+                                </h1>
+                                <div
+                                    class="buttonImg flex cursor-pointer items-center justify-center rounded bg-secondary p-[6px] lg:p-[10px]">
+                                    <img src="img/pintar_landing-faq-vector.svg"
+                                        class="toggleButton w-3/5 transition-all duration-200 xl:w-4/5"
+                                        alt="Toggle Button" />
+                                </div>
+                            </div>
+                            <div class="answer mt-2 hidden w-[90%]">
+                                <p class="text-[8px] opacity-65 md:text-xs lg:text-sm">
+                                    Aplikasi Kotak Pintar mendukung berbagai platform, termasuk Windows, macOS, Linux,
+                                    Android, dan iOS. Anda dapat mengelola file Anda dari perangkat apa saja.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group border-b-[1px] border-opacity-15 pb-3 text-white shadow-md transition-all duration-300 lg:pb-4">
+                            <div class="cursor-pointers flex items-center justify-between rounded-md">
+                                <h1
+                                    class="w-[100%] text-[10px] font-bold sm:text-[8px] md:text-[10px] lg:text-xs xl:text-base 2xl:text-base">
+                                    Apakah aplikasi Kotak Pintar gratis ?
+                                </h1>
+                                <div
+                                    class="buttonImg flex cursor-pointer items-center justify-center rounded bg-secondary p-[6px] lg:p-[10px]">
+                                    <img src="img/pintar_landing-faq-vector.svg"
+                                        class="toggleButton w-3/5 transition-all duration-200 xl:w-4/5"
+                                        alt="Toggle Button" />
+                                </div>
+                            </div>
+                            <div class="answer mt-2 hidden w-[90%]">
+                                <p class="text-[8px] opacity-65 md:text-xs lg:text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Vitae, eum.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group border-b-[1px] border-opacity-15 pb-3 text-white shadow-md transition-all duration-300 lg:pb-4">
+                            <div class="cursor-pointers flex items-center justify-between rounded-md">
+                                <h1
+                                    class="w-[100%] text-[10px] font-bold sm:text-[8px] md:text-[10px] lg:text-xs xl:text-base 2xl:text-base">
+                                    Bagaimana cara memastikan keamanan data saya ?
+                                </h1>
+                                <div
+                                    class="buttonImg flex cursor-pointer items-center justify-center rounded bg-secondary p-[6px] lg:p-[10px]">
+                                    <img src="img/pintar_landing-faq-vector.svg"
+                                        class="toggleButton w-3/5 transition-all duration-200 xl:w-4/5"
+                                        alt="Toggle Button" />
+                                </div>
+                            </div>
+                            <div class="answer mt-2 hidden w-[90%]">
+                                <p class="text-[8px] opacity-65 md:text-xs lg:text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Vitae, eum.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group border-b-[1px] border-opacity-15 pb-3 text-white shadow-md transition-all duration-300 lg:pb-4">
+                            <div class="cursor-pointers flex items-center justify-between rounded-md">
+                                <h1
+                                    class="w-[100%] text-[10px] font-bold sm:text-[8px] md:text-[10px] lg:text-xs xl:text-base 2xl:text-base">
+                                    Apakah saya bisa berbagi file dengan orang lain ?
+                                </h1>
+                                <div
+                                    class="buttonImg flex cursor-pointer items-center justify-center rounded bg-secondary p-[6px] lg:p-[10px]">
+                                    <img src="img/pintar_landing-faq-vector.svg"
+                                        class="toggleButton w-3/5 transition-all duration-200 xl:w-4/5"
+                                        alt="Toggle Button" />
+                                </div>
+                            </div>
+                            <div class="answer mt-2 hidden w-[90%]">
+                                <p class="text-[8px] opacity-65 md:text-xs lg:text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Vitae, eum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative hidden sm:block sm:w-[40%] lg:w-[40%]" data-aos="fade-right">
+                    <img src="img/pintar_landing-fqa.svg" alt="" class="w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cta" class="py-8 md:py-14 xl:py-16">
+        <div class="container relative mx-auto rounded-md bg-primary text-[#05151F] shadow-lg" style="
+              background-image: url(&quot;/img/pintar_landing-latar.svg&quot;);
+              background-size: cover;
+              background-position: center;
+            " data-aos="fade-up">
+            <div
+                class="relative z-50 mx-auto flex w-[65%] flex-col gap-3 py-4 text-center md:gap-5 md:py-6 xl:gap-6 xl:py-10">
+                <h1
+                    class="mx-auto w-[80%] text-center text-xs font-black md:text-lg lg:text-2xl xl:text-4xl 2xl:leading-[3.25rem]">
+                    Nikmati Kemudahan dan Keamanan dalam Mengelola File
+                </h1>
+                <p class="mx-auto  sm:w-4/5 text-[8px] font-semibold md:text-xs lg:text-base 2xl:text-xl">
+                    Jangan biarkan file Anda berantakan! Dengan aplikasi File Manager kami, Anda dapat mengorganisir,
+                    mengakses, dan berbagi file dengan mudah. Dapatkan kemudahan manajemen file dalam genggaman Anda.
+                </p>
+                <div class="flex gap-2 md:gap-4 justify-center">
+                    <a href="https://wa.me/6281246336063?text=Hai%20saya%20ingin%20membeli(...)%20"
+                        class="scale rounded bg-[#05151F] text-white p-2 text-[6px] font-medium text-text sm:text-xs md:px-4 md:py-2 md:text-sm xl:rounded xl:py-4 2xl:text-lg">
+                        Coba dengan gratis</a>
+                    <a href="https://wa.me/6281246336063?text=Hai%20saya%20ingin%20membeli(...)%20"
+                        class="scale rounded bg-[#05151F] bg-opacity-80 text-white p-2 text-[6px] font-medium text-text sm:text-xs md:px-4 md:py-2 md:text-sm xl:rounded xl:py-4 2xl:text-lg">
+                        Pelajari Lebih Lanjut</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="testimoni" class="py-8 md:py-14 xl:py-16">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="hidden sm:block w-[45%]" data-aos="fade-right">
+                    <img src="img/pintar_landing-testi.svg" alt="" class="">
+                </div>
+                <div class="w-full sm:w-[50%]">
+                    <div class="text-center sm:text-left" data-aos="fade-up" data-aos-delay="200">
+                        <h1
+                            class="mx-auto sm:mx-0 mb-3 text-[8px] font-medium sm:text-[10px] lg:text-sm lg:mb-5 xl:mb-6 2xl:text-xl border w-fit border-white border-opacity-20 rounded-lg p-2 px-3 lg:p-3 lg:px-5">
+                            Pengalaman Pengguna
+                        </h1>
+                        <h1
+                            class="text-xs  font-bold sm:tracking-wide sm:text-xl md:text-2xl lg:leading-[2.75rem] lg:text-2xl xl:tracking-wider xl:text-3xl xl:leading-[3rem]  2xl:text-[2.5rem] 2xl:leading-[3.25rem]">
+                            Lihat Apa yang Mereka Katakan Tentang Kami
+                        </h1>
+                    </div>
+                    <div class="swiper mySwiperss mt-8" data-aos="fade-up" data-aos-delay="400">
+                        <div class="swiper-wrapper pb-8 xl:pb-10">
+                            <div class="swiper-slide">
+                                <div
+                                    class="border border-white border-opacity-20 p-4 rounded-xl flex flex-col gap-3 sm:p-3 lg:gap-4 xl:p-5">
+                                    <img src="img/pintar_landing-star.svg" alt="" class="w-1/2">
+                                    <p
+                                        class="font-normal opacity-65 text-[10px] line-clamp-3 md:text-xs lg:text-sm xl:text-base">
+                                        File Manager ini benar-benar intuitif dan memudahkan saya mengelola file.</p>
+                                    <div class="flex gap-3 sm:gap-2 md:gap-3">
+                                        <img src="img/pintar_landing-testi1.svg" alt="" class="w-[20%]">
+                                        <div class="">
+                                            <h1
+                                                class="text-xs sm:text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                                                Andi Pratama</h1>
+                                            <p
+                                                class="text-[8px] opacity-50 md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base">
+                                                Pengusaha</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="border border-white border-opacity-20 p-4 rounded-xl flex flex-col gap-3 sm:p-3 lg:gap-4 xl:p-5">
+                                    <img src="img/pintar_landing-star.svg" alt="" class="w-1/2">
+                                    <p
+                                        class="font-normal opacity-65 text-[10px] line-clamp-3 md:text-xs lg:text-sm xl:text-base">
+                                        File Manager ini benar-benar intuitif dan memudahkan saya mengelola file.</p>
+                                    <div class="flex gap-3 sm:gap-2 md:gap-3">
+                                        <img src="img/pintar_landing-testi2.svg" alt="" class="w-[20%]">
+                                        <div class="">
+                                            <h1
+                                                class="text-xs sm:text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                                                Siti Rahma</h1>
+                                            <p
+                                                class="text-[8px] opacity-50 md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base">
+                                                Konsultan Keuangan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="border border-white border-opacity-20 p-4 rounded-xl flex flex-col gap-3 sm:p-3 lg:gap-4 xl:p-5">
+                                    <img src="img/pintar_landing-star.svg" alt="" class="w-1/2">
+                                    <p
+                                        class="font-normal opacity-65 text-[10px] line-clamp-3 md:text-xs lg:text-sm xl:text-base">
+                                        File Manager ini benar-benar intuitif dan memudahkan saya mengelola file.</p>
+                                    <div class="flex gap-3 sm:gap-2 md:gap-3">
+                                        <img src="img/pintar_landing-testi1.svg" alt="" class="w-[20%]">
+                                        <div class="">
+                                            <h1
+                                                class="text-xs sm:text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                                                Andi Pratama</h1>
+                                            <p
+                                                class="text-[8px] opacity-50 md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base">
+                                                Pengusaha</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="mt-16">
+        <div class="container mx-auto border-t-2 border-primary">
+            <div
+                class="flex w-full flex-wrap justify-between gap-y-12 py-6 text-[6px] sm:justify-between md:justify-between md:gap-0 md:py-12 md:text-[10px] md:font-light lg:text-xs">
+                <div class="flex w-[45%] flex-col justify-between font-normal sm:w-[20%] md:font-medium 2xl:w-[17%]">
+                    <div class="">
+                        <div class="mb-4 flex items-center gap-2 md:gap-4 lg:mb-6">
+                            <img src="img/pintar_logo.svg" alt="" class="w-[10%]">
+                            <h1
+                                class="text-secondary text-xs font-bold md:text-sm lg:text-base xl:text-lg 2xl:text-xl ">
+                                Kotak Pintar
+                            </h1>
+                        </div>
+                        <p class="text-[9px] font-normal opacity-65 md:text-xs xl:text-sm">Melakukan manajemen file dengan praktis
+                            dan cepat mengguanakan
+                            Kotak Pintar. </p>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden w-[40%] flex-col gap-1 text-[9px] font-normal opacity-65 sm:w-fit md:gap-3 md:text-xs md:font-medium lg:flex xl:gap-4 2xl:text-sm">
+                    <h1
+                        class="opacity-100 text-secondary mb-2 text-xs font-bold md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+                        LINK
+                    </h1>
+                    <a href="#home" class="">Beranda</a>
+                    <a href="#service" class="">Fitur</a>
+                    <a href="#about" class="">File</a>
+                    <a href="#price" class="">Review</a>
+                    <a href="#faq" class="">Daftar</a>
+                </div>
+
+                <div
+                    class="flex w-[40%] flex-col gap-1 text-[9px] font-normal opacity-65 sm:w-fit md:gap-3 md:text-xs md:font-medium xl:gap-4 2xl:text-sm">
+                    <h1
+                        class="opacity-100 text-secondary mb-2 text-xs font-bold md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+                        Kontak
+                    </h1>
+                    <p class="">Denpasar, Bali, Indonesia</p>
+                    <p class="">+62-123-456</p>
+                    <p class="">Kotakpintar@gmail.com</p>
+                    <p class="">PintarFile@gmail.com</p>
+                    <p class="">Butuh bantuan ?</p>
+                </div>
+
+                <div
+                    class="flex w-[40%] flex-col gap-1 text-[9px] font-normal opacity-65 sm:w-fit md:gap-2 md:text-xs md:font-medium xl:gap-4 2xl:text-sm">
+                    <h1
+                        class="opacity-100 text-secondary mb-2 text-xs font-bold md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+                        Platform
+                    </h1>
+                    <p class="">Windows</p>
+                    <p class="">macOS</p>
+                    <p class="">Linux</p>
+                    <p class="">iOS</p>
+                </div>
+
+                <div
+                    class="flex w-[40%] flex-col gap-1 text-[9px] font-normal opacity-65 sm:w-fit md:gap-3 md:text-xs md:font-medium lg:w-fit xl:gap-4 2xl:text-sm">
+                    <h1
+                        class="opacity-100 text-secondary mb-2 text-xs font-bold md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+                        Sosial Media
+                    </h1>
+                    <a href="" class="">Instagram</a>
+                    <a href="" class="">Facebook</a>
+                    <a href="" class="">Tiktok</a>
+                    <a href="" class="">Twitter</a>
+                    <a href="" class="">Youtube</a>
+                </div>
+            </div>
+            <div class="mt-8 flex justify-between mb-4">
+                <p class="text-[9px] font-normal opacity-65 md:text-xs">© Copyright by Atrem Project. All right reserved</p>
+                <div class=" hidden sm:flex gap-4 lg:gap-8 xl:gap-12">
+                    <p class="text-[9px] font-normal opacity-65 md:text-xs">Privacy  Policy</p>
+                    <p class="text-[9px] font-normal opacity-65 md:text-xs">Teams of use</p>
+                    <p class="text-[9px] font-normal opacity-65 md:text-xs">Legal</p>    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="Js/landing.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+
+</html>
